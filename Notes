@@ -16,7 +16,12 @@ Class name: M24503
 Password: password
 
 
-xfreerdp /u:student /v:10.50.27.51 dynamic-resolution +glyph-cache +clipboard
+
+
+
+
+xfreerdp /u:student /v:10.50.27.51 /dynamic-resolution +glyph-cache +clipboard
+
 ssh student@10.50.27.51
 
 
