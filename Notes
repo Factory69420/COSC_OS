@@ -1,0 +1,25 @@
+
+----------------------------------------------------------------------------------------DAY 1-----------------------------------------------------------------------------------------------------------
+
+COSC NOTES 
+I am Stack #9
+Stack#9 IP:
+10.50.27.51
+
+US ARMY CYBER SCHOOL:
+http://10.50.22.197:8000
+
+Username: KAEL-M-24-503
+Password: Carmel123!
+
+Class name: M24503
+Password: password
+
+
+xfreerdp /u:student /v:10.50.27.51 dynamic-resolution +glyph-cache +clipboard
+ssh student@10.50.27.51
+
+
+
+
+
