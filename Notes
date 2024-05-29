@@ -82,6 +82,8 @@ Get-Content $Profile.AllUsersAllHosts
 
 
 ------------------------------------------------------------------------------------------DAY 2------------------------------------------------------------------------------------------------------------------
+Get-WmiObject win32_useraccount | fl -Property name, sid
+
 Primer_Registry_1
 What Windows registry path is the Volatile Hive?
 HKLM\HARDWARE
@@ -127,4 +129,9 @@ When accessing a remote registry which are the only 2 accessible HKEYs?
 
 SYNTAX Hive, Hive
 HKLM, HKU
+
+
+
+Primer_Registry_9
+What PowerShell cmdlet will list currently mapped drives?
 
