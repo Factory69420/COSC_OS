@@ -145,4 +145,40 @@ HKLM, HKU
 
 Primer_Registry_9
 What PowerShell cmdlet will list currently mapped drives?
+Get-PSDrive
+
+
+
+Primer_Registry_10
+What is the native Windows GUI tool for managing the registry?
+regedit
+
+
+Windows_Registry_Basics_1
+What registry hive contains all machine settings?
+HKLM
+
+
+
+Windows_Registry_Basics_2
+What registry hive contains all user settings?
+HKU
+
+Windows_Registry_Basics_3
+What registry hive contains only the currently logged-in user's settings?
+HKCU
+
+
+Windows_Registry_Basics_4
+The HKEY_CURRENT_USER registry hive is a symbolic link to another registry subkey. What is the subkey that it is linked to?
+
+Flag format: HIVE\SID.........................
+
+Reminder: All challenges are done using Workstation2.
+
+
+
+
+
+
 
