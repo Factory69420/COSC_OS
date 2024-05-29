@@ -65,7 +65,42 @@ Test-Path $PROFILE.AllUsersAllHosts
 
 
 
+Windows_PowerShell_Profiles8
+
+Challenge only allows ONE attempt
+
+Malware is running on the primary PowerShell profile on the File-Server. Based on PowerShell profile order of precedence (what is read first), find the correct flag.
+
+The flag is the string after the #, without the preceding space.
+
+
+
+
+$Profile | Get-Member -MemberType NoteProperty
+
+Get-Content $Profile.AllUsersAllHosts
 
 
 ------------------------------------------------------------------------------------------DAY 2------------------------------------------------------------------------------------------------------------------
+Primer_Registry_1
+What Windows registry path is the Volatile Hive?
+HKLM\HARDWARE
+
+
+
+
+Primer_Registry_2
+What registry key creates the Wow6432Node to represent 32-bit applications that run on a 64-bit version of Windows?
+
+HKEY_LOCAL_MACHINE\SOFTWARE
+
+
+
+
+
+
+
+
+
+
 
