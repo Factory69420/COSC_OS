@@ -289,3 +289,76 @@ Figure out the manufacturer's name of the only USB drive that was plugged into t
 reg query HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\USBSTOR
 
 SanDisk9834
+
+
+
+
+
+Windows_Registry_Basics_16
+
+What suspicious user profile, found in the registry, has connected to this machine?
+
+
+
+Windows_Registry_Basics_17
+
+What suspicious wireless network, found in the registry, has this system connected to?
+
+
+
+
+
+Primer_NTFS_1
+
+The ____ determines how the data is stored on disk.
+
+(Fill in the blank)
+File System
+
+
+
+
+
+
+Primer_NTFS_2
+What are NTFS partition sectors grouped into?
+Clusters
+
+
+
+Primer_NTFS_3
+What contains the metadata about all of the files and directories on a NTFS partition?
+Master File Table
+
+
+
+Primer_NTFS_4
+NTFS files are collections of what?
+attributes
+
+
+
+
+Primer_NTFS_5
+Which NTFS attribute would store an alternate data stream?
+$DATA
+
+
+
+
+Primer_NTFS_6
+Which NTFS attribute holds information about a file's encrypted attributes?
+$LOGGED_UTILITY_STREAM
+
+
+Primer_NTFS_7
+Which NTFS attribute that is composed of the file security and access control properties?
+
+
+
+
+
+
+
+
+
