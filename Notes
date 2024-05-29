@@ -353,12 +353,158 @@ $LOGGED_UTILITY_STREAM
 
 Primer_NTFS_7
 Which NTFS attribute that is composed of the file security and access control properties?
+$SECURITY_DESCRIPTOR
+
+
+Primer_NTFS_8
+In NTFS, what is the type id, in hex, of the attribute that actually stores a NTFS files contents?
+0x80
+
+
+Primer_NTFS_9
+
+In NTFS what is the maximum number of bytes a MFT entry (containing the entirety of a file) can contain to be considered "Resident Data"?
+
+1024
+
+Primer_NTFS_10
+
+
+NTFS permissions can be a assigned to a filesystem object in two ways. Which way is intentionally assigned on the file or folder?
+
+Explicit
+
+
+
+Primer_NTFS_11
+NTFS permissions can be a assigned to a filesystem object in two ways. Which way is the results of an object being assigned permissions as the result of being the child of another object?
+
+Inherited
+
+
+
+Primer_NTFS_12
+
+Which NTFS file level permission is missing from the following list? Write, Read & Execute, Modify, Full Control
+
+
+Read
+
+
+
+
+Primer_NTFS_13
+Which NTFS folder level permission is missing from the following list?: Read, Write, Read & Execute, Modify, Full control
+
+List Folder Contents
 
 
 
 
 
 
+Primer_NTFS_14
 
+
+Which NTFS file level permission permits changing the contents of a file, deleting the file but does not allow the ability to change the permissions on the file?
+
+
+Modify
+
+
+
+
+Primer_NTFS_15
+Which NTFS folder level permission allows changing permissions?
+
+Full Control
+
+
+
+Primer_NTFS_16
+Which NTFS attribute stores the file times of an object?
+
+$STANDARD_INFORMATION
+
+
+
+Primer_NTFS_17
+What CLI command will only show the letters of attached drives? **Hint command is 3 words
+
+fsutil fsinfo drives
+
+
+
+
+Windows_File_System_Basics_1
+Every file on a Windows system has attributes. What does the d attribute mean?
+directory
+
+
+
+Windows_File_System_Basics_2
+Every file on a Windows system has attributes. What does the h attribute mean?
+hidden
+
+
+Windows_File_System_Basics_3
+What PowerShell command will list all files in the current directory, regardless of their attributes?
+
+Get-ChildItem -Force
+
+
+
+
+Windows_File_System_Basics_4
+
+What PowerShell command will give you the sha512 hash of a file?
+
+Flag format: command -argument
+
+Get-FileHash -Algorithm SHA512
+
+
+Windows_File_System_Basics_5
+
+What PowerShell command will list permissions of a file?
+
+Get-Acl
+
+
+
+Windows_File_System_Basics_6
+
+What Windows file maps hostnames to IP addresses?
+C:\Windows\System32\drivers\etc\hosts
+
+
+
+
+Windows_File_System_Basics_7
+Which group has ReadandExecute (RX) permissions to the file listed in the previous challenge, File_System_Basics_6?
+
+(Get-Acl -Path C:\Windows\System32\drivers\etc\hosts).Access
+
+BUILTIN\Users
+
+
+
+Windows_File_System_Basics_8
+Find the last five characters of the MD5 hash of the hosts file.
+
+Get-FileHash C:\Windows\System32\drivers\etc\hosts -Algorithm MD5
+
+7566D
+
+
+
+
+
+
+Windows_File_System_Basics_9
+
+Examine the readme file somewhere in the CTF user’s home directory.
+
+Reminder: All challenges are done on the file-server.
 
 
