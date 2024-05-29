@@ -25,7 +25,47 @@ xfreerdp /u:student /v:10.50.27.51 /dynamic-resolution +glyph-cache +clipboard
 ssh student@10.50.27.51
 
 
+Windows_PowerShell_Regex_5
+Count the number of words in words.txt that meet the following criteria:
+
+    a appears at least twice consecutively
+    and is followed immediately by any of the letters a through g
+    Note: File Location - C:\Users\CTF\Desktop\CTF
+    Example: aac...aaa...
+
+
+Get-Content C:\Users\CTF\Desktop\words.txt | Where-Object {$_ -Match 'aa[a-g]'} | Measure-Object
+
+
+
+
+Windows_PowerShell_Profiles6
+
+
+What command would you run to view the help for PowerShell Profiles?
+
+
+Get-Help about_Profiles
+
+
+
+
+
+
+Windows_PowerShell_Profiles7
+
+What command would tell you if there was a profile loaded for All Users All Hosts?
+
+Flag is the full command syntax
+
+
+Test-Path $PROFILE.AllUsersAllHosts
+
+
+
+
 
 
 
 ------------------------------------------------------------------------------------------DAY 2------------------------------------------------------------------------------------------------------------------
+
