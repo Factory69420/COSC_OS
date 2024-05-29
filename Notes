@@ -81,6 +81,13 @@ $Profile | Get-Member -MemberType NoteProperty
 Get-Content $Profile.AllUsersAllHosts
 
 
+
+
+
+do{$file = 'omega' + $counter + ".zip"; expand-archive $file -DestinationPath <filepath>; $counter -- }until($counter -eq 0)
+
+
+
 ------------------------------------------------------------------------------------------DAY 2------------------------------------------------------------------------------------------------------------------
 Get-WmiObject win32_useraccount | fl -Property name, sid
 
