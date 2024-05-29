@@ -96,11 +96,35 @@ HKEY_LOCAL_MACHINE\SOFTWARE
 
 
 
+Primer_Registry_3
+In what registry path are the BOOT_START drivers located?
+HKLM\SYSTEM\CurrentControlSet\Services
+
+
+Primer_Registry_4
+What start value do BOOT_START drivers have in the registry?
+0x0
 
 
 
+Primer_Registry_5
+During kernel initialization, what registry location is read containing all SYSTEM_START drivers?
+HKLM\SYSTEM\CurrentControlSet\Services
 
 
+Primer_Registry_6
+SERVICE_AUTO_START drivers and services are loaded after kernel initialization. What start value do they have in the registry?
+0x2
 
 
+Primer_Registry_7
+What start value do SERVICE_DEMAND_START drivers and services have in the registry?
+0x3
+
+
+Primer_Registry_8
+When accessing a remote registry which are the only 2 accessible HKEYs?
+
+SYNTAX Hive, Hive
+HKLM, HKU
 
