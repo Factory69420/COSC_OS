@@ -82,11 +82,15 @@ Get-Content $Profile.AllUsersAllHosts
 
 
 
+Use a PowerShell loop to unzip the Omega file 1,000 times and read what is inside.
 
+Note: Make sure you back up the .zip file to a different directory before attempting this challenge.
 
+$counter = 1000
 do{$file = 'omega' + $counter + ".zip"; expand-archive $file -DestinationPath <filepath>; $counter -- }until($counter -eq 0)
 
-
+do{$file = 'omega' + $counter + ".zip"; expand-archive $file -DestinationPath C:\Use
+rs\CTF\Documents\; $counter -- }until($counter -eq 0)
 
 ------------------------------------------------------------------------------------------DAY 2------------------------------------------------------------------------------------------------------------------
 Get-WmiObject win32_useraccount | fl -Property name, sid
