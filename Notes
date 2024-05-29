@@ -175,10 +175,25 @@ The HKEY_CURRENT_USER registry hive is a symbolic link to another registry subke
 Flag format: HIVE\SID.........................
 
 Reminder: All challenges are done using Workstation2.
+LOOK AT MAP FOR REMINDER WHO TO SSH IN AS. IN THIS CASE IT WANTS andy.dwyer
+ 
+HKU\S-1-5-21-2881336348-3190591231-4063445930-1004
+
+
+Windows_Registry_Basics_5
+What PowerShell command will list all the subkeys and contents in the current directory and/or will list all the subkeys and the contents of a directory you specify?
+
+Get-ChildItem
 
 
 
 
 
+Windows_Registry_Basics_6
+What PowerShell command will list only the contents of a registry key or subkey?
+Get-Item
+
+
+Windows_Registry_Basics_7
 
 
