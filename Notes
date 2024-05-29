@@ -508,3 +508,35 @@ Examine the readme file somewhere in the CTF user’s home directory.
 Reminder: All challenges are done on the file-server.
 
 
+ Get-ChildItem -Path C:\Users\CTF -Include readme -File -recurse
+
+
+conent of readmile file is 123456 in favorites directory.
+
+
+
+
+Windows_File_System_Basics_10
+
+There is a hidden directory in the CTF user's home directory. The directory contains a file. Read the file.
+Get-ChildItem -Path C:\Users\CTF -Force -Directory -Attributes Hidden (finds secret sauce directory cd into and get content on the file)
+
+
+ketchup
+
+
+
+
+Windows_File_System_Basics_11
+
+Find a file in a directory on the desktop with spaces in it. FLAG is the contents of the file
+
+HINT: If you like to type the full names and paths of files, you better look for a shortcut.
+
+
+
+
+
+
+
+
