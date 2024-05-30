@@ -571,11 +571,124 @@ Windows_File_System_Basics_13
 "Fortune cookies" have been left around the system so that you won't find the hidden password...
 
 
-Get-ChildItem -Path C:\  -File -recurse -ErrorAction SilentlyContinue  | Where-Object {$_.name -match 'fortune*'}
+Get-ChildItem -Path C:\  -File -recurse -ErrorAction SilentlyContinue   
 cd  C:\Windows\PLA\not_anihc
-Get-Content '.\The Fortune Cookie'
+
+Get-Item '.\The Fortune Cookie' -Stream *
+C:\Windows\PLA\not_anihc\The Fortune Cookie:none
+Get-Content 'C:\Windows\PLA\not_anihc\The Fortune Cookie:none' -stream *
+fortune_cookie
 
 
+Windows_File_System_Basics_14
+There are plenty of phish in the C:\Users\CTF, but sometimes they're hidden in plain site.
+
+Find the phish.
+
+---------------------------------------------------------------------------------------------------------- Day 3-----------------------------------
+Linux Basics 1
+
+What command lists the contents of directories in Linux/Unix systems?
+
+ls
+
+
+
+
+
+
+Linux Basics 2
+
+For the ls command, what arguments, or switch options, will allow you to print human-readable file sizes in a long-list format?
+
+The flag is entire command, including arguments
+
+ls -lh
+
+
+
+
+
+
+Linux Basics 3
+
+What character will pipe the standard output from
+
+echo "I’m a plumber"
+
+to another command, as standard input?
+
+
+|
+Linux Basics 4
+
+What argument/switch option, when used with man, will search the short descriptions and man-page-names for a keyword that you provide?
+
+The flag is the complete command, with argument/switch.
+
+
+man -k <keyword>
+
+
+
+
+Linux Basics LFS Hierarchy
+
+
+What is the absolute path to the root directory?
+
+
+/
+
+
+
+
+
+Linux Basics LFS Hierarchy2
+
+What is the absolute path to the default location for configuration files?
+
+
+
+/etc
+
+
+Linux Basics LFS Hierarchy3
+
+What is the directory that contains executable programs (binaries) which are needed in single user mode, to bring the system up or to repair it?
+
+/bin
+
+
+
+Linux Basics LFS Hierarchy4
+What is the absolute path to the directory which contains non-essential binaries that are accessible by standard users as well as root?
+
+
+/usr/bin
+
+
+
+Linux Basics LFS Hierarchy5
+
+An absolute path to a directory which contains binaries only accessible by the root user, or users in the root group.
+
+/sbin
+
+Linux Basics LFS Hierarchy6
+What is the absolute path for the binary cat man-page?
+
+whereis cat
+
+/usr/share/man/man1/cat.1.gz
+
+
+
+Linux Basics 5
+
+Search the man pages for the keyword digest. Then, use one of the binaries listed to hash the string OneWayBestWay using the largest sha hash available.
+
+The resulting hash is the flag.
 
 
 
