@@ -558,3 +558,28 @@ Windows_File_System_Basics_12
 
 Find the Alternate Data Stream in the CTF user's home, and read it.
 
+
+go to C:\Users\CTF\Documents
+Get-Content .\nothing_here -stream hidden
+
+
+P455W0RD
+
+
+
+Windows_File_System_Basics_13
+"Fortune cookies" have been left around the system so that you won't find the hidden password...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
