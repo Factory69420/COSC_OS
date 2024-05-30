@@ -537,6 +537,24 @@ HINT: If you like to type the full names and paths of files, you better look for
 
 
 
+Windows_File_System_Basics_11
 
 
+
+Find a file in a directory on the desktop with spaces in it. FLAG is the contents of the file
+
+HINT: If you like to type the full names and paths of files, you better look for a shortcut.
+
+
+go to C:\Users\CTF\Desktop\z
+do an LS
+Then Get-content on the file:
+
+987654321
+
+
+
+Windows_File_System_Basics_12
+
+Find the Alternate Data Stream in the CTF user's home, and read it.
 
