@@ -571,9 +571,9 @@ Windows_File_System_Basics_13
 "Fortune cookies" have been left around the system so that you won't find the hidden password...
 
 
-
-
-
+Get-ChildItem -Path C:\  -File -recurse -ErrorAction SilentlyContinue  | Where-Object {$_.name -match 'fortune*'}
+cd  C:\Windows\PLA\not_anihc
+Get-Content '.\The Fortune Cookie'
 
 
 
