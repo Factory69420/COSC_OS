@@ -1285,3 +1285,152 @@ What registry key is responsible for starting services on your machine during th
 
 Research: https://www.picussecurity.com/resource/blog/picus-10-critical-mitre-attck-techniques-t1060-registry-run-keys-startup-folder
 
+
+
+
+
+
+HKLM\Software\Microsoft\Windows\CurrentVersion\RunServices
+
+
+
+
+Primer_Boot_Process_22
+
+
+When a user logs on to a Windows host, authentication will either grant the user access to the local computer only (Local Logon) or the user will also be granted access to a Windows domain (Domain Logon). Which logon will the user be authenticated to via the Security Accounts Manager (SAM) database?
+
+Research: https://learn.microsoft.com/en-us/windows-server/security/windows-authentication/windows-logon-scenarios
+
+
+local logon
+
+
+
+Primer_Boot_Process_23
+
+
+What is the parent process of explorer.exe?
+
+Research: https://en.wikipedia.org/wiki/Windows_NT_booting_process#Shell
+
+
+userinit.exe
+
+
+
+
+Primer_Boot_Process_24
+
+
+What is responsible for handling Windows SAS (secure attention sequence), user profile loading, assignment of security to user shell, and Windows station and desktop protection?
+
+Research: https://learn.microsoft.com/en-us/windows/win32/secauthn/winlogon
+
+
+winlogon.exe
+
+
+
+
+
+Primer_Boot_Process_25
+
+
+What critical Windows process is initialized by wininit.exe, is responsible for creating the user's security access token and verifying user logon credentials?
+
+Research: https://en.wikipedia.org/wiki/Local_Security_Authority_Subsystem_Service
+
+lsass.exe
+
+
+Primer_Boot_Process_26
+
+What Microsoft recovery option overwrites the registry key HKLM\System\Select after every successful logon?
+
+Research: https://learn.microsoft.com/en-us/troubleshoot/azure/virtual-machines/start-vm-last-known-good
+
+
+
+Last Known Good Configuration 
+
+
+
+Primer_Boot_Process_27
+
+
+What authentication protocol is the default for logging onto an Active Directory domain and features SSO (Single-Sign On), mutual authentication and primarily uses symmetric cryptography?
+
+Research: https://learn.microsoft.com/en-us/windows-server/security/kerberos/kerberos-authentication-overview
+
+
+Kerberos
+
+
+
+
+Primer_Boot_Process_28
+
+In Kerberos the Active Directory controller serves as which major Kerberos component consisting of the Authentication Service (AS) and the Ticket Granting Service (TGS)
+
+Research: https://learn.microsoft.com/en-us/windows/win32/secauthn/key-distribution-center
+
+
+
+KDC
+
+
+
+
+
+Primer_Boot_Process_29
+
+
+When would the following Windows registry keys, actions occur? HKLM\Software\Microsoft\Windows NT\CurrentVersion\Winlogon\Userinit HKLM\Software\Microsoft\Windows NT\CurrentVersion\Winlogon\Shell HKLM\Software\Microsoft\Windows NT\CurrentVersion\Winlogon\Notify
+
+Research: https://www.picussecurity.com/resource/blog/picus-10-critical-mitre-attck-techniques-t1060-registry-run-keys-startup-folder
+
+
+
+login
+
+
+Primer_Kernel_1
+
+
+
+
+
+The Windows NT Operating System attempts to combine features and benefits of microkernel and monolithic kernel architectures, making it which type of kernel architecture?
+
+Research: https://www.educative.io/answers/what-is-windows-kernel
+
+
+hybrid 
+
+
+
+Primer_Kernel_2
+
+
+
+
+The Linux kernel is an example of what type of kernel architecture?
+
+Research: https://simple.wikipedia.org/wiki/Kernel_(computer_science)
+
+
+monolithic
+
+
+
+
+Primer_Kernel_3
+
+Windows operating system name typically differs from its version number. Which Windows version includes Windows 7 and Windows Server 2008R2 and was the 1st version to ship with PowerShell?
+
+**hint - only give the version number
+
+Research: https://learn.microsoft.com/en-us/windows/win32/sysinfo/operating-system-version
+
+
