@@ -1051,10 +1051,67 @@ What term describes a formatted storage device that can span 1 or more partition
 
 Research: https://learn.microsoft.com/en-us/windows-hardware/drivers/ifs/storage-device-stacks--storage-volumes--and-file-system-stacks
 
+Volume
 
 
 
+Primer_Boot_Process_4
 
+What CLI disk partitioning tool is available in Windows to view and manipulate both partitions and volumes?
+
+Research: https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/diskpart
+
+Diskpart
+
+
+Primer_Boot_Process_5
+
+Windows includes 4 critical Kernel-mode components. Which component is a matched pair with the kernel and obfuscates the hardware dependencies from the kernel?
+Kernel
+Executive
+HAL
+Device 
+
+Answer: HAL
+
+
+Primer_Boot_Process_6
+
+
+
+Windows includes 4 critical Kernel-mode components. Which component directs calls from a user-mode process to the kernel services?
+Kernel
+Executive
+HAL
+Device
+
+Research: https://en.wikipedia.org/wiki/Architecture_of_Windows_NT#Executive
+
+Answer: Executive
+
+
+Primer_Boot_Process_7
+
+
+
+This provides an operating system with a software interface to a hardware device
+
+Research: https://learn.microsoft.com/en-us/windows-hardware/drivers/gettingstarted/what-is-a-driver-
+
+
+Driver
+
+
+
+Primer_Boot_Process_8
+
+
+
+What are the two firmware interfaces supported by modern computers and read in the Pre-boot phase of the Windows boot process?
+
+**Hint, answer format = _______ and _______
+
+Research: https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/boot-to-uefi-mode-or-legacy-bios-mode?view=windows-11
 
 
 
