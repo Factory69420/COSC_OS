@@ -918,3 +918,25 @@ Expand your mind
 
 Linux Basics Permissions10
 Find the warp and read its secrets for the flag.
+
+
+
+
+
+
+
+Linux Basics Regular Expressions1
+Using the commands ls and grep, identify the number of directories in /etc/ that end in .d
+
+ls -l /etc/ | grep '^d.*\.d$' | wc -l
+
+28
+
+
+
+
+
+
+
+
+
