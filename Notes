@@ -1114,7 +1114,174 @@ What are the two firmware interfaces supported by modern computers and read in t
 Research: https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/boot-to-uefi-mode-or-legacy-bios-mode?view=windows-11
 
 
+UEFI and BIOS
 
 
 
+
+
+Primer_Boot_Process_9
+
+
+What is the name of the process that spawns SYSTEM?
+
+Research: https://en.wikipedia.org/wiki/Windows_NT_booting_process (Hint: What really is SYSTEM?)
+
+
+ntoskrnl.exe
+
+
+
+Primer_Boot_Process_10
+
+
+
+In Windows what does the boot sector code load into memory?
+
+**Hint - Flag Format = ________ and ________
+
+(Hint: What two things are between the MBR and the Kernel?) Research: https://learn.microsoft.com/en-us/troubleshoot/windows-client/performance/windows-boot-issues-troubleshooting
+
+
+
+bootmgr and winload.exe
+
+
+
+Primer_Boot_Process_11
+
+
+In Windows 10 what is the name of the boot manager?
+
+Research: https://learn.microsoft.com/en-us/troubleshoot/windows-client/performance/windows-boot-issues-troubleshooting
+
+
+bootmgr
+
+
+
+Primer_Boot_Process_12
+
+In Microsoft Vista and later the boot.ini file was replaced by what?
+
+Research: https://learn.microsoft.com/en-us/windows-hardware/drivers/devtest/boot-options-in-windows
+
+
+
+BCD
+
+
+
+
+
+Primer_Boot_Process_13
+
+What is the tamper-resistant processor mounted on the motherboard used to improve the security of your PC. It's used by services like BitLocker drive encryption and Windows Hello to securely create and store cryptographic keys, and to confirm that the operating system and firmware on your device are what they're supposed to be, and haven't been tampered with.
+
+Research: https://learn.microsoft.com/en-us/windows/security/information-protection/tpm/tpm-fundamentals
+
+
+
+TPM
+
+
+
+Primer_Boot_Process_14
+
+
+
+
+
+During the Windows boot process, what starts BOOT_START device drivers and services with value of 0x0 in the registry key HKLM\SYSTEM\CurrentControlSet\Services?
+
+Research: https://www.lifewire.com/what-is-winload-exe-2626051
+
+Winload.exe
+
+
+
+
+
+Primer_Boot_Process_15
+
+
+During the Windows boot process, what starts SYSTEM_START device drivers and services with hex value of 0x1 in the registry key HKLM\SYSTEM\CurrentControlSet\Services?
+
+Research: https://en.wikipedia.org/wiki/Ntoskrnl.exe
+
+Ntoskrnl.exe
+
+
+Primer_Boot_Process_16
+
+
+
+
+During the Windows boot process, services.exe starts device drivers and services on demand with what hex value in the registry key HKLM\SYSTEM\CurrentControlSet\Services?
+
+    hint syntax - #x#
+
+Research: https://winreg-kb.readthedocs.io/en/latest/sources/system-keys/Services-and-drivers.html
+
+0x2
+
+
+
+
+Primer_Boot_Process_17
+
+Starting in Windows Vista, what process spawns two additional instances (with identical names), used to initiate session 0 and session 1?
+
+Research: https://www.ghacks.net/2007/12/27/csrssexe-smssexe-and-lsassexe/
+https://techcommunity.microsoft.com/t5/ask-the-performance-team/sessions-desktops-and-windows-stations/ba-p/372473
+
+smss.exe
+
+
+
+
+
+Primer_Boot_Process_18
+
+
+
+Which Windows Vista user session is non-interactive, contains system services and processes and is isolated from the GDI (Graphical Device Interface)
+
+Research: https://techcommunity.microsoft.com/t5/ask-the-performance-team/sessions-desktops-and-windows-stations/ba-p/372473
+
+0
+
+
+
+Primer_Boot_Process_19
+
+
+What is the boot process security feature available in UEFI systems, that only allows verified drivers to load?
+
+Research: https://learn.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-secure-boot
+
+
+Secure boot
+
+
+Primer_Boot_Process_20
+
+
+
+To make booting faster, starting with Windows 8, the OS does a partial ________ of the kernel session at shutdown?
+
+Research: https://learn.microsoft.com/en-us/windows/win32/power/system-power-states
+
+
+hibernation
+
+
+Primer_Boot_Process_21
+
+
+
+
+What registry key is responsible for starting services on your machine during the boot process? Flag is the full registry path.
+
+Research: https://www.picussecurity.com/resource/blog/picus-10-critical-mitre-attck-techniques-t1060-registry-run-keys-startup-folder
 
