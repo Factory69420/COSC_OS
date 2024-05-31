@@ -1434,3 +1434,42 @@ Windows operating system name typically differs from its version number. Which W
 Research: https://learn.microsoft.com/en-us/windows/win32/sysinfo/operating-system-version
 
 
+6.1
+
+
+
+Primer_Kernel_4
+
+Which Windows version includes Windows Server 2016, 2019, 2022, Windows 10 & 11 and includes SMB 3.1.1 support?
+
+Research: https://learn.microsoft.com/en-us/windows/win32/sysinfo/operating-system-version
+
+
+
+
+10
+
+
+
+Primer_Kernel_5
+
+
+
+
+The CMD.EXE tool systeminfo included in Windows is very similar to msinfo32 and displays operating system configuration version information for a local or remote machine, including service pack levels.
+
+Craft a systeminfo command that only returns the below info:
+OS Version: "System OS and Build #"
+BIOS Version: "Your BIOS Ver"
+
+The Flag is the full command.
+
+Research: https://ss64.com/nt/systeminfo.html 
+
+
+
+
+
+
+
+
