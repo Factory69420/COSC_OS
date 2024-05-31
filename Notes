@@ -936,6 +936,127 @@ ls -l /etc/ | grep '^d.*\.d$' | wc -l
 
 
 
+Linux Basics Regular Expressions2
+
+
+File: home/garviel/numbers
+
+Use regular expressions to match patterns similar to valid and invalid IP addresses.
+
+The answer is the count/number of lines that match in the file.
+
+
+
+
+Linux Basics Regular Expressions3
+
+
+File: home/garviel/numbers
+
+Use regular expressions to match valid IP addresses. The flag is the number of addresses.
+
+HINT: What are the valid numerical values of each octet in an IP address?
+
+grep -P '\b(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\b' /home/garviel/numbers | wc -l
+
+
+
+
+18
+
+
+Linux Basics Regular Expressions4
+
+
+File: home/garviel/numbers
+
+Use regular expressions to match patterns that look similar to a MAC Address. Flag is a count of the number of matches.
+
+HINT: This is a loose match! Some of these results won't be true MAC addresses.
+
+Flag format: ####
+
+
+
+Linux Basics Reformat1
+
+
+File: home/garviel/numbers
+
+Use awk to print lines:
+
+>= 420 AND <=1337
+
+The flag is a SHA512 hash of the output.
+
+
+
+awk 'NR >= 420 && NR <= 1337' /home/garviel/numbers | sha512sum
+
+e62ff70d772ef0977f4f8fe1751fda5689ce1daf1fabc6d0cc49da234d02719986c0acb97f582166170a5a1f418e854602a5eb98c773655906a3f85440c37d39
+
+
+
+
+
+
+
+Linux Basics Regular Expressions5
+
+
+File: home/garviel/numbers
+
+Use regular expressions to find valid Locally Administered or Universally Administered Unicast MAC addresses.
+
+Give the count of Locally and Universally Administered MAC addresses as the answer.
+
+HINT: What characters specifically define a Locally or Universally Administered Unicast MAC Address?
+
+
+
+------------------------------------------------------------------------------------------------------------Day 4-----------------------------------------
+Primer_Boot_Process_1
+
+What is the smallest addressable unit on a hard disk?
+
+Research: https://learn.microsoft.com/en-us/windows/win32/fileio/disk-devices-and-partitions
+
+Sector
+
+
+
+
+
+Primer_Boot_Process_2
+
+
+
+
+
+What term describes a logical division of a single storage device?
+
+Research: https://learn.microsoft.com/en-us/windows/win32/fileio/disk-devices-and-partitions
+
+
+Partition
+
+
+
+
+
+Primer_Boot_Process_3
+
+
+What term describes a formatted storage device that can span 1 or more partitions, has a single file system and is assigned a drive letter?
+
+Research: https://learn.microsoft.com/en-us/windows-hardware/drivers/ifs/storage-device-stacks--storage-volumes--and-file-system-stacks
+
+
+
+
+
+
+
 
 
 
