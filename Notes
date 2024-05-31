@@ -1514,6 +1514,73 @@ What session ID do Windows services operate in?
 
 
 
+Windows_Boot_Init_5
+
+
+What process creates access tokens?
+
+lsass.exe
+
+
+Windows_Boot_Init_6
+What is the parent process to all svchosts?
+
+
+
+services.exe
+
+
+
+
+
+
+Windows_Boot_Init_7
+
+
+
+What process is waiting with high priority for the Secure Attention Sequence (SAS)?
+
+
+winlogon.exe
+
+
+
+
+
+Windows_Boot_Init_8
+
+
+What user space process spawns explorer, then dies?
+
+
+
+Windows_Boot_Init_9
+What is the name of the bootloader, with extension, we are using on all of the Windows machines in this environment?
+
+winload
+
+
+
+Windows_Boot_Init_10
+
+Challenge only allows ONE attempt
+
+Based on the boot loader from Init_9, which firmware are we using (BIOS or UEFI) in our environment?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
