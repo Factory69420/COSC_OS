@@ -1467,6 +1467,52 @@ The Flag is the full command.
 Research: https://ss64.com/nt/systeminfo.html 
 
 
+systeminfo | findstr /C:"OS Version" /C:"BIOS Version"
+
+
+
+Windows_Boot_Init_1
+
+What is the first process to spawn on Windows systems after the kernel loads?
+
+
+
+
+System
+
+Windows_Boot_Init_2
+
+
+
+
+What is the Process ID (PID) of the first Windows process?
+
+
+
+4
+
+
+
+
+
+Windows_Boot_Init_3
+
+What is the second boot process to spawn, that then spawns csrss in both session 0 and session 1?
+
+
+
+smss.exe
+
+
+Windows_Boot_Init_4
+
+What session ID do Windows services operate in?
+
+
+
+
+
+
 
 
 
