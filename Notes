@@ -1775,3 +1775,29 @@ Enter the flag in Hexadecimal form.
 
 
 
+
+Linux Boot Bits and Bytes 4
+
+
+Execute : sudo cat /dev/vda | xxd -l 32 -c 0x10 -g 1
+
+What are the values contained in hex positions 0x00000001 through 0x00000008?
+
+Flag format: Value,Value,Value,...
+
+Machine: For this challenge: Minas_Tirith (ssh from Admin_Station)
+
+
+
+Linux Boot MBR 2
+
+
+
+Locate the master boot record for one of the Linux machines and read it with xxd
+
+What programming language is the MBR written in?
+
+HINT: Look at the first three bytes
+
+
+
