@@ -1608,6 +1608,21 @@ Follow these instructions to boot the virtual image -- Click Here ---> Windows B
 
 1RF5Zgf9P
 
+
+
+
+Windows_Boot_Remediate_2
+
+
+
+
+
+
+
+
+
+
+
 ---------------------------------------------------------------------------------------------------------Day 5------------------------------------------------------------------
 
 
@@ -1675,12 +1690,14 @@ How many bytes could the range 0x00000000 - 0x00000010 contain?
 
 Linux Boot MBR 1
 
-
-
-
 How large is the Master Boot Record and what directory is it located in?
 
 Flag format: #InBytes,fullpathdirectory
+
+
+512,/dev
+
+
 
 
 
