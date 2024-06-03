@@ -1641,6 +1641,47 @@ How many bits are in a nibble, and a byte?
 
 Flag format: #,#
 
+4,8
+
+
+
+
+
+
+Linux Boot Bits and Bytes 2
+
+How many bits does a single Hexadecimal character represent?
+
+
+
+4
+
+
+
+Linux Boot Bits and Bytes 3
+
+
+
+Each hex pair contains a value of 8 bits when used to represent memory. The range from 0x00000000 to 0x00000010 in hexadecimal represents addresses in memory or positions in data. This range includes the starting address (0x00000000) and ends at the address (0x00000010).
+
+How many bytes could the range 0x00000000 - 0x00000010 contain?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
