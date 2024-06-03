@@ -1611,11 +1611,35 @@ Follow these instructions to boot the virtual image -- Click Here ---> Windows B
 
 
 
+Linux Boot Hex1
+
+
+Solve the following equation:
+
+0x31A - 0x21B
+
+Enter the flag in Hexadecimal form.
+
+
+
+
+0xFF
 
 
 
 
 
+
+
+Linux Boot Bits and Bytes 1
+
+
+
+
+
+How many bits are in a nibble, and a byte?
+
+Flag format: #,#
 
 
 
