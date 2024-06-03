@@ -1668,6 +1668,33 @@ How many bytes could the range 0x00000000 - 0x00000010 contain?
 
 
 
+17
+
+
+
+
+Linux Boot MBR 1
+
+
+
+
+How large is the Master Boot Record and what directory is it located in?
+
+Flag format: #InBytes,fullpathdirectory
+
+
+
+
+
+
+
+
+Linux Boot SysV 1
+
+
+
+
+Identify which of your Linux machines is using SysV Initialization.
 
 
 
@@ -1682,6 +1709,52 @@ How many bytes could the range 0x00000000 - 0x00000010 contain?
 
 
 
+
+
+Linux Boot Hex2
+
+
+What are the maximum and minimum value a single Hexadecimal digit can contain?
+
+Enter the values in Linux Hexadecimal Numerical Constant form.
+
+Flag format: min-max
+
+Research Hex to Decimal: https://www.aqua-calc.com/convert/number/hexadecimal-to-decimal
+
+
+0x0-0xF
+
+
+
+
+Linux Boot Hex3
+
+
+What are the maximum and minimum values, in decimal notation, that a single Hexadecimal digit can represent?
+
+Flag format: min-max
+
+
+
+0-15
+
+
+
+Linux Boot Hex4
+
+
+
+Solve the following equation:
+
+0x31A + 0x43
+
+Enter the flag in Hexadecimal form.
+
+
+
+
+0x35D
 
 
 
