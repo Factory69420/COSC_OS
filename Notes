@@ -1573,6 +1573,40 @@ Based on the boot loader from Init_9, which firmware are we using (BIOS or UEFI)
 
 
 
+Windows_Boot_Init_11
+
+
+
+
+What file saves the memory state to the hard drive when going into hibernation?
+
+
+hiberfil.sys
+
+
+
+
+
+
+Windows_Boot_Init_12
+
+What bootloader is responsible for restoring the system to its original state after hibernation?
+
+
+Winresume.exe
+
+
+
+
+
+
+Windows_Boot_Remediate_1
+
+The system is booting into safe mode. Identify the flag from the command-line output of the command used to diagnose boot issues.
+
+Follow these instructions to boot the virtual image -- Click Here ---> Windows Bootkit Instructions
+
+
 
 
 
