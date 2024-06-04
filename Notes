@@ -2307,14 +2307,20 @@ HINT: Use Sysinternals tools.
         password: password
 
 
+Use regedit to find Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Kerberos\Parameters
+Make sure your in this exact directory
+
+Flag is: 76aGreX5
 
 
 
 
+Windows_Hidden_Processes_5
 
 
+There is malware named TotallyLegit. Find its binary location and there will be a file in that directory. Read the file.
 
-
+HINT: Use Sysinternals tools.
 
 
 
