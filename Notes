@@ -2067,6 +2067,202 @@ Primer_Processes6
 
 
 
+During a network survey you observed a host running inetinfo.exe service. What type of server might you have found?
+
+Research: https://www.file.net/process/inetinfo.exe.html
+
+
+web server
+
+
+
+
+Primer_Processes7
+
+
+
+
+During a reconnaissance mission you enumerated a host running the dns.exe service. Is this a user pc or a server?
+user pc
+server
+
+Research: https://learn.microsoft.com/en-us/windows-server/networking/dns/dns-top
+
+
+Server
+
+
+
+Primer_Processes8
+
+
+A host running firefox and office 365 is most likely what type of host? Server or Client
+
+Research: https://learntomato.flashrouters.com/what-is-a-client-what-is-a-server-what-is-a-host/
+
+Client
+
+
+
+Primer_Processes9
+
+
+
+How does a User-Mode Service request resources?
+
+Research:
+
+https://www.educative.io/answers/what-is-user-mode-vs-kernel-mode-in-an-operating-system
+
+
+
+
+system calls
+
+
+Primer_Processes10
+
+
+
+
+
+
+Passively copying currently running processes for comparison later is known as?
+
+Research: https://isc.sans.edu/diary/Baselining+Servers+to+Detect+Outliers/22940
+
+
+
+
+
+
+Baselining
+
+
+
+Primer_Processes11
+
+
+
+What can execute any part of a processes code, to include parts already being executed?
+
+Research: https://learn.microsoft.com/en-us/windows/win32/procthread/processes-and-threads
+
+
+threads
+
+
+
+Primer_Processes12
+
+
+
+Windows has how many process priority levels?
+
+Research: https://learn.microsoft.com/en-us/windows/win32/procthread/scheduling-priorities
+
+
+
+32
+
+
+Windows_Processes_Basics_1
+
+
+
+What Sysinternals tool shows malware persistence locations in tabs within its GUI?
+
+Research: https://learn.microsoft.com/en-us/sysinternals
+
+
+Autoruns
+
+
+
+
+
+Windows_Processes_Basics_2
+
+What Sysinternals tool is used to investigate processes?
+
+
+Process Explorer
+
+
+
+
+
+Windows_Processes_Basics_3
+
+What Sysinternals tool can be used to investigate network connection attempts?
+
+
+
+TCPView
+
+
+
+Windows_Processes_Basics_4
+
+
+What Sysinternals tool can view permissions?
+
+
+AccessChk
+
+
+
+Windows_Processes_Basics_5
+
+What Sysinternals tool allows us to view and modify handles?
+
+
+Handle
+
+
+Windows_Processes_Basics_6
+
+What is the default Windows user directory for files downloaded from the internet? The flag is the folder name only.
+
+Downloads
+
+Windows_Processes_Basics_7
+
+What is the default Windows download directory that everyone has access to? The flag is the absolute path to the directory
+
+C:\Users\Public\Downloads
+
+Windows_Processes_Basics_8
+
+What Sysinternals tool shows service load order?
+
+LoadOrder
+
+Windows_Processes_Basics_9
+What is the service name of Windows Defender Firewall?
+
+MpsSvc
+
+Windows_Processes_Basics_10
+
+What SysInternals tool reports .dlls loaded into processes?
+
+
+
+
+
+Windows_Hidden_Processes_1
+
+
+
+
+There is malware on the system that is named similarly to a legitimate Windows executable. There is a .dll in the folder that the malware runs from. The flag is the name of the .dll.
+
+Reminder: All challenges are done using Workstation1.
+
+
+
+
 
 
 
