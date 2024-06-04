@@ -2262,6 +2262,56 @@ Reminder: All challenges are done using Workstation1.
 
 
 
+libmingwex-0
+
+
+(check startup it has similiar name to svchost process or whatever)
+
+
+
+
+Windows_Hidden_Processes_2
+
+You notice that there is an annoying pop up happening regularly. Investigate the process causing it. The flag is the name of the executable.
+
+
+McAfeeFireTray.exe
+
+
+
+
+
+Windows_Hidden_Processes_3
+
+
+
+Determine what is sending out a SYN_SENT message. The flag is the name of the executable.
+
+HINT: Use a Sysinternals tool.
+
+
+(use TCPVIEW and filter for SYN_SENT)
+
+McAfeeFireTray.exe
+
+
+
+Windows_Hidden_Processes_4
+
+Malware uses names of legit processes to obfuscate itself. Give the flag located in Kerberos’ registry subkey.
+
+HINT: Use Sysinternals tools.
+
+    Machine: Workstation1 (RDP from Admin-Station)
+        login: student
+        password: password
+
+
+
+
+
+
+
 
 
 
