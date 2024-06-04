@@ -1849,7 +1849,19 @@ cat /etc/inittab | grep initdefault
 
 
 
-sysv3
+Linux Boot SysV 3
+
+
+What is the last script to run when the command init 6 is executed?
+
+Flag format: /absolute/path
+
+NOTE: “Use the Minas_Tirith machine for this question.”
+
+
+
+
+
 
 /etc/init.d/reboot
 
@@ -1857,6 +1869,17 @@ sysv3
 
 
 Linux Boot SysV 4
+
+What run levels start the daemon that allows remote connections over port 22?
+
+Flag format: #,#,#,#
+
+NOTE: Use the Minas_Tirith machine for this question.
+
+
+
+
+
 
 2,3,4,5
 
@@ -1899,6 +1922,152 @@ NOTE: Use the SystemD Machine for this question.
 
 
 graphical.target,/lib/systemd/system
+
+
+
+
+
+
+
+
+Linux Boot Systemd 3
+
+
+
+What unit does the graphical.target want to start, based solely on its configuration file?
+
+HINT: Targets deal with which init system? Which machine should you be looking for this flag, on?
+
+NOTE: Use the SystemD Machine for this question.
+
+
+
+
+
+
+
+display-manager.service
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+----------------------------------------------------------------------------------Day 6--------------------------------------------------------------------------
+
+Primer_Processes1
+
+
+What is the full path to folder used when Windows redirects 32 bit applications running on a 64bit system?
+
+Research: https://learn.microsoft.com/en-us/windows/win32/winprog64/file-system-redirector
+
+
+
+
+C:\Windows\SysWOW64
+
+
+
+
+
+
+Primer_Processes2
+
+
+
+What Windows System Service starts the kernel and user mode subsystems?
+
+Research: https://en.wikipedia.org/wiki/Session_Manager_Subsystem
+
+
+
+smss.exe
+
+
+
+
+Primer_Processes3
+
+
+
+What Windows system process:
+
+    Runs in session 0
+    is responsible for enforcing the security policy on the system
+    Performs all logon functions
+    Handles password changes
+    Creates access tokens
+    Writes to the Windows Security Log
+
+Research: https://en.wikipedia.org/wiki/Local_Security_Authority_Subsystem_Service
+
+
+
+
+
+
+LSASS
+
+
+
+
+
+Primer_Processes4
+
+
+
+Which is spoolsv.exe?
+Server-mode service
+User-mode service
+
+Research: https://learn.microsoft.com/en-us/windows-hardware/drivers/print/introduction-to-spooler-components
+
+
+Server-mode service
+
+
+
+
+
+
+Primer_Processes5
+
+
+
+Which service type is explorer.exe?
+Server-mode service
+User-mode service
+
+Research: Link #1: https://learn.microsoft.com/en-us/windows-hardware/drivers/gettingstarted/user-mode-and-kernel-mode
+
+Link #2: https://en.wikipedia.org/wiki/File_Explorer
+
+
+
+
+User-mode service
+
+
+
+
+Primer_Processes6
+
+
+
+
+
 
 
 
