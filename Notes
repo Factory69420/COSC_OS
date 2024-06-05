@@ -2692,7 +2692,7 @@ HINT: Read the man page for lsof to understand permissions.
 
 Flag format: If more than one, list the permissions comma separated, no spaces
 
-
+r,w
 
 
 Linux Processes 7
@@ -2705,7 +2705,7 @@ Flag format: in alphabetical order with all non-alphabetic characters removed: N
 
 HINT: Only character names!
 
-
+Aragorn,BruceWayne,Eowyn,Tolkien
 
 
 
@@ -2720,6 +2720,12 @@ NOTE: Remember, zombie processes only live until the parent process kills and re
 Flag format: /absolute/path
 
 
+/bin/funk
+
+
+
+
+
 Linux Processes 9
 
 Locate the strange open port on the SysV system.
@@ -2727,6 +2733,84 @@ Locate the strange open port on the SysV system.
 Identify the command line executable and its arguments.
 
 Flag format: /executable/path -arguments
+
+
+
+Linux Process Proc Dir 1
+
+
+Examine the process list to find the ssh process. Then, identify the symbolic link to the absolute path for its executable in the /proc directory.
+
+The flag is the absolute path to the symbolic link, and the file it is linked to.
+
+Flag format: /absolute/path,/absolute/path
+
+
+
+
+
+
+
+
+Linux Process Proc Dir 2
+
+
+
+Identify the file that contains udp connection information. Identify the process using port 123.
+
+For the flag, enter:
+
+    Process name
+    File descriptor number for the udp socket
+    Its permissions as shown in lsof
+
+Flag format: name,#,permission
+
+
+
+Linux Processes 10
+
+
+Locate the strange open port on the SysV system.
+
+Identify how the process persists between reboots.
+
+The flag is the absolute path for the file that contains the persistence mechanism, and the configuration option.
+
+HINT: Persistence is defined here
+
+Flag format: filepath,configuration_option
+
+
+
+
+
+
+Linux Process Proc Dir 3
+
+
+Identify one of the human-readable file handles by the other program that creates a zombie process.
+
+NOTE: Remember, zombie processes only live until the parent process kills them. Try monitoring the processes list with top or htop to find them.
+
+The flag is the text from one of the files it reads.
+
+
+
+
+Linux Process Find Evil 1
+
+
+    Scenario: The Villains group has been chanting offerings to their new leader at regular intervals over a TCP connection.
+
+    Task: Identify their method of communication and how it is occurring. Locate the following artifacts: ** The chant/text used by each villain (include spaces) ** The new Lord receiving the offering ** The IP address and port that the offering is received over
+
+    Flag format: chant text,new Lord,IP:port
+
+    Machine: Minas_Tirith
+
+
+
 
 
 
