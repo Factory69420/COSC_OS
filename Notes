@@ -2247,7 +2247,7 @@ Windows_Processes_Basics_10
 
 What SysInternals tool reports .dlls loaded into processes?
 
-
+listdlls
 
 
 
@@ -2342,6 +2342,24 @@ StrongBad
 
 
 
+Windows_Hidden_Processes_7
+A nonstandard port has been opened by possible malware on the system. Identify the port.
+
+    Machine: Workstation1 (RDP from Admin-Station)
+        login: student
+        password: password
+
+
+
+
+6666
+
+
+
+
+
+
+
 Win_Process_Situational_Awareness_1
 
 
@@ -2365,7 +2383,11 @@ What is the PATH listed in the output when we find the handle for spoolsv.exe?
 
 HINT: Use Sysinternals tools and don't forget to run as Administrator...
 
-
+cd to sysinternal folder
+use tool handle like this
+.\handle -p spoolsv
+Output:
+C:\Windows\System32\en-US\spoolsv.exe.mui
 
 
 
@@ -2386,7 +2408,9 @@ In what Load Order Group is the Windows Firewall service?
 
 HINT: Use Sysinternals tools.
 
+use loadorder tool and look for it 
 
+Network Provider
 
 
 
@@ -2402,12 +2426,32 @@ What is the first .dll associated with winlogon.exe? Provide the name of the .dl
 HINT: Use Sysinternals tools.
 
 
+go to proc exporer crtl f winlogon go to strings and crlt f dll
+ntdll.dll
 
 
 Win_Process_Situational_Awareness_5
 
 
 While examining the Windows Defender Firewall, what is the LogAllowedConnections setting set to, for the Public profile?
+
+
+run this cmd :
+netsh advfirewall show publicprofile logging
+
+
+disable
+
+Windows_Hidden_Processes_7
+
+A nonstandard port has been opened by possible malware on the system. Identify the port.
+
+    Machine: Workstation1 (RDP from Admin-Station)
+        login: student
+        password: password
+
+
+
 
 
 
@@ -2447,11 +2491,14 @@ Windows_UAC_Basics5
 
 The flag is the RequestedExecutionLevel of the schtasks.exe file.
 
+ I just guesed
+asInvoker
 
 
+Windows_UAC_Basics_6
+Determine which UAC subkey property shows whether UAC is enabled or not. The flag is the data value in that property.
 
-
-
+Hint: Make sure you're on the file-server.
 
 
 
