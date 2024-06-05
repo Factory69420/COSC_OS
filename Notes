@@ -2736,6 +2736,23 @@ Flag format: /executable/path -arguments
 
 
 
+ps aux
+
+/bin/netcat -lp 9999
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Linux Process Proc Dir 1
 
 
