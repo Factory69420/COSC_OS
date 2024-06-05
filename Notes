@@ -2762,9 +2762,12 @@ The flag is the absolute path to the symbolic link, and the file it is linked to
 
 Flag format: /absolute/path,/absolute/path
 
+pgrep ssh 
+cd /proc
+cd /proc/2001
+sudo ls -lisa | grep exe
 
-
-
+/proc/2001/exe,/usr/sbin/sshd
 
 
 
