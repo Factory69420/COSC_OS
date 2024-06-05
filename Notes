@@ -2832,7 +2832,14 @@ HINT: Persistence is defined here
 
 Flag format: filepath,configuration_option
 
+ netstat -tuln | grep LISTEN
+cd /etc
+ls
+cat inittab
 
+path of inittab,91:2345:respawn:/bin/netcat -lp 9999 
+
+/etc/inittab,91:2345:respawn:/bin/netcat -lp 9999
 
 
 
