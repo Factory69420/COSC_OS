@@ -2695,12 +2695,38 @@ Flag format: If more than one, list the permissions comma separated, no spaces
 
 
 
+Linux Processes 7
+
+Identify the names of the orphan processes on the SysV system.
+
+NOTE: Remember, orphan processes spawn and die periodically. Try monitoring the processes list with top or htop to find them.
+
+Flag format: in alphabetical order with all non-alphabetic characters removed: Name,Name,Name,Name
+
+HINT: Only character names!
 
 
 
 
 
+Linux Processes 8
 
+Locate zombie processes on the SysV system.
+
+Identify the zombie processes' parent process.
+
+NOTE: Remember, zombie processes only live until the parent process kills and removes them from the system’s process table. Try monitoring the processes list with top or htop to find them.
+
+Flag format: /absolute/path
+
+
+Linux Processes 9
+
+Locate the strange open port on the SysV system.
+
+Identify the command line executable and its arguments.
+
+Flag format: /executable/path -arguments
 
 
 
