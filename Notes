@@ -2529,3 +2529,183 @@ reg query HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\
 
 
 NiceJob
+
+
+
+Windows_Services_Basics_1
+
+
+
+
+What command-line (cmd) command will show service information?
+
+
+sc
+
+
+
+
+Windows_Services_Basics_2
+
+
+What command-line (cmd) command will show all services, running or not running?
+
+The flag is the full command, for all services.
+
+
+
+sc query state= all
+
+
+
+
+Windows_Services_Basics_3
+
+What PowerShell command will list all services?
+
+
+Get-Service
+
+
+
+
+Windows_Services_Basics_4
+
+What registry location holds all service data?
+
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services
+
+
+
+
+Windows_Services_Basics_5
+
+What registry subkey holds a service's .dll location?
+
+The flag is the subkey name (full path not needed).
+
+Parameters
+
+
+
+
+Windows_Services_Basics_6
+
+
+Services have a name and display name, which could be different. What is the service name of the only Totally-Legit service?
+
+Reminder: All challenges are done using the file-server.
+
+Get-Service | Where-Object { $_.DisplayName -eq "Totally-Legit" }
+
+Legit
+
+
+
+Windows_Services_Basics_7
+
+
+
+
+Figure out the SID of the only Totally-Legit service.
+
+Example: S-1-5-80-159957745-2084983471-2137709666-960844832-[4182961472]
+
+Submit only the [bracketed] portion of the SID.
+
+HINT: Run the command on the service name, not the display name.
+
+sc.exe showsid Legit
+
+
+1182961511
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------Day 7----------------------------------------------------------------------------------------------------
+
+
+Linux Processes 1
+What is the process ID (PID) of the SysV Init daemon?
+
+pgrep init
+
+1
+
+
+
+Linux Processes 2
+
+How many child processes did SysV Init daemon spawn?
+
+
+pstree -p 1
+
+21
+
+
+
+Linux Processes 3
+
+Identify all of the arguments given to the ntpd daemon (service) using ps.
+
+Format: List all options with parameters (include numbers).
+
+ps -p $(pgrep ntpd) -o args=
+
+-p /var/run/ntpd.pid -g -u 105:109
+
+
+Linux Processes 4
+
+
+What is the parent process to Bombadil’s Bash process? (name of the binary, not the absolute path)
+
+pgrep -u bombadil bash
+31204
+
+ps -o comm= -p $(ps -o ppid= -p 31204)
+sshd
+
+
+Linux Processes 5
+Identify the file mapped to the fourth file descriptor (handle) of the cron process.
+
+HINT: There might be multiple cron processes, but only one with the answer.
+
+Flag format: /absolute/path
+
+pgrep cron
+1346
+
+sudo ls -lisa /proc/1346/fd/3
+
+/run/crond.pid
+
+
+
+Linux Processes 6
+Identify the permissions that cron has on the file identified in Processes 5.
+
+HINT: Read the man page for lsof to understand permissions.
+
+Flag format: If more than one, list the permissions comma separated, no spaces
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
