@@ -14,7 +14,7 @@ Password: Carmel123!
 
 Class name: M24503
 Password: password
-
+Test is June 14th on Friday
 
 ./strings *.exe -accepteula
 
@@ -2499,8 +2499,33 @@ Windows_UAC_Basics_6
 Determine which UAC subkey property shows whether UAC is enabled or not. The flag is the data value in that property.
 
 Hint: Make sure you're on the file-server.
+ 
+reg query HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System
+Check under EnableLua value
+
+
+0x1337
 
 
 
+Windows_UAC_Basics_7
 
 
+
+Provide the name of the UAC [Registry subkey] property that determines what level UAC is set to for admin privileges (Example UAC levels: Default, Always, Notify).
+
+
+reg query HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System
+
+ConsentPromptBehaviorAdmin
+
+
+Windows_UAC_Basics_8
+
+Query the registry subkey where UAC settings are stored, and provide the flag.
+
+
+reg query HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System
+
+
+NiceJob
