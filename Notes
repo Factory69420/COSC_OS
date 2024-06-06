@@ -3070,5 +3070,62 @@ Get the flag from the contents of the file.
 Hint: We're not interested in numbers.
 
 
+Get-Item "REGISTRY::HKEY_USERS\*\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.txt" | select -Expand property | ForEach-Object {
+    [System.Text.Encoding]::Default.GetString((Get-ItemProperty -Path "REGISTRY::HKEY_USERS\*\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.txt" -Name $_).$_)
+}   
+
+
+
+
+Flag, Found A.
+
+
+
+
+
+Windows_Bam_2
+
+Enter the full path of the program that was run on this computer from an abnormal location.
+
+
+
+
+Windows_Prefetch_2
+Enter the name of the questionable file in the prefetch folder.
+
+
+BAD_INTENTIONS.EXE-8F2806FC.pf
+
+
+
+
+Windows_Prefetch_3
+What is the creation time of the questionable file in the prefetch folder?
+
+Flag format: mm/dd/yyyy
+
+dir BAD_INTENTIONS.EXE-8F2806FC.pf
+
+02/23/2022
+
+
+
+
+Windows_Recycle_Bin_3
+
+Recover the flag from the Recycle Bin. Enter the name of the recycle bin file that contained the contents of the flag, and the contents of the deleted file. Include the file extension in your answer.
+
+*Hint: "Don't"
+
+Flag format: filename,contents
+
+
+$RZBV370.txt,DontTrashMeyo
+
+
+Windows_Jump_Lists
+Find the file in the jump list location that might allow privilege escalation.
+UIDPWD.txt
+
 
 
