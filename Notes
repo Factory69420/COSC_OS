@@ -3144,6 +3144,11 @@ Identify the XML element name in the output below
 Flag: The element with start and end tags
 
 
+scaninfo
+
+
+
+
 
 Linux Auditing and Logging XML 2
 
@@ -3230,6 +3235,64 @@ Hint: Use the numerical code!
 
 
 
+Linux Auditing and Logging Syslog 1
+
+
+
+Challenge only allows 3 attempts
+
+Download the attached rsyslog configuration file for the Syslog # challenges.
+
+In the legacy rules section of the file, what facility is logged to 0.log?
+
+
+0
+
+
+Linux Auditing and Logging Syslog 2
+
+
+
+In the legacy rules section of the file, how many severities are logged to 0.log?
+
+Flag: Total number of severities
+
+
+8
+
+
+Linux Auditing and Logging Syslog 3
+
+
+In the legacy rules section of the file, how many severities are logged to 4min.log?
+
+List the severities from highest severity (lowest numerical listed) to lowest severity (highest numerical listed) using their severity name.
+
+Flag format: name,name,name
+
+
+
+emergency,alert,critical,error,warning
+
+
+
+
+
+
+
+Linux Auditing and Logging Syslog 4
+
+In the legacy rules section of the file, how many severities are logged to 4sig.log?
+
+List the severities from highest severity (lowest numerical listed) to lowest severity (highest numerical listed), using their severity name.
+
+Flag format: name,name,name
+
+Hint: I’m sure they made a man page for this. Read the downloaded file for some links.
+
+
+
+Notice,Informational,Debug
 
 
 
@@ -3254,9 +3317,16 @@ mail,clock,NTP,notice
 
 
 
+Linux Auditing and Logging Syslog 6
 
 
+Challenge only allows 3 attempts
 
+What facilities and what severities are being sent to a remote server over a reliable connection using port 514?
+
+Provide the facility names, number of severities, and the correct destination IP address.
+
+Flag format: F,F,#,IP
 
 
 
