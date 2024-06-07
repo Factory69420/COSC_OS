@@ -3127,5 +3127,139 @@ Windows_Jump_Lists
 Find the file in the jump list location that might allow privilege escalation.
 UIDPWD.txt
 
+-----------------------------------------------------------------------------------------------------------Day 9-------------------------------------------------------------------------------------------
+
+Linux Auditing and Logging XML 1
+
+
+File: /home/garviel/output.xml
+
+Identify the XML element name in the output below
+
+
+<scaninfo type="syn" protocol="tcp" numservices="200" services="1-200"/>
+
+
+
+Flag: The element with start and end tags
+
+
+
+Linux Auditing and Logging XML 2
+
+
+
+
+Identify one of the XML attributes in the output below
+
+
+<scaninfo type="syn" protocol="tcp" numservices="200" services="1-200"/>
+
+
+
+Flag format: value="pair"
+
+
+protocol="tcp"
+
+
+
+
+Linux Auditing and Logging Standards 1
+
+
+
+What RFC is Syslog?
+
+
+
+RFC 5424
+
+
+
+
+
+
+
+Linux Auditing and Logging Standards 2
+
+
+
+
+
+Challenge only allows 3 attempts
+
+What is the numerical code assigned to the facility dealing with authorization?
+
+
+4
+
+
+
+
+Linux Auditing and Logging Standards 3
+
+
+
+
+Challenge only allows 3 attempts
+
+How many severity codes are defined in the standard that defines syslog?
+
+
+
+
+8
+
+
+
+Linux Auditing and Logging Standards 4
+
+
+Challenge only allows 3 attempts
+
+What severity is assigned to system instability messages?
+
+Hint: Use the numerical code!
+
+
+
+
+
+0
+
+
+
+
+
+
+
+
+Linux Auditing and Logging Syslog 5
+
+
+
+
+Challenge only allows 3 attempts
+
+What is being logged in not.log?
+
+Provide the facilities from lowest facility to highest facility numerically, and the severity being logged. (List only the first word for each.)
+
+Flag format: facility,facility,facility,severity
+
+
+mail,clock,NTP,notice
+
+
+
+
+
+
+
+
+
+
+
 
 
