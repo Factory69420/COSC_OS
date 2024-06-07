@@ -3330,6 +3330,62 @@ Flag format: F,F,#,IP
 
 
 
+auth,authpriv,8,10.30.0.1
+
+
+
+Linux Auditing and Logging Syslog 7
+
+
+Challenge only allows ONE attempt
+
+Use the answer from Syslog 6 for this question.
+
+Do logs that match this filter ever get saved on the local machine?
+Yes
+No
+
+
+
+Idk Yes I think?
+
+
+
+Linux Auditing and Logging Syslog 8
+
+
+What messages are being sent to 10.84.0.1?
+
+Provide the facility number, the number (amount) of severity codes, and Layer 4 connection type as the answer.
+
+Flag format: F,S,Layer 4 connection Type
+
+0,7,UDP
+
+
+
+Linux Auditing and Logging Whut 1
+
+Use the log file attached to this for all Whut questions.
+
+How many unique users logged into this machine?
+
+3 
+
+
+
+Linux Auditing and Logging Whut 3
+
+Identify the Cyber Attack Technique that Balrog is trying on the machine.
+
+HINT: https://attack.mitre.org/
+
+
+Credential Access
+
+
+
+
 
 
 
