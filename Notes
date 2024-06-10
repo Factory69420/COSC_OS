@@ -3881,6 +3881,63 @@ What Volatility plugin will dump a process to an executable file sample?
 
 
 
+procdump
+
+
+Windows_Memory_Analysis_Plugin_2
+What Volatility plugin will extract command history by scanning for _COMMAND_HISTORY?
+
+cmdscan
+
+
+Windows_Memory_Analysis_Plugin_3
+What Volatility plugin will show driver objects?
+
+driverscan
+
+Windows_Memory_Analysis_Basics_1
+What plugin do you run to find which memory profile to use with a memory image?
+
+imageinfo
+
+
+
+Windows_Memory_Analysis_Basics_2
+What switch/argument will list all plugins for Volatility?
+
+-h
+
+Windows_Volatility_Data
+In terms of Volatile Data, what locations are the MOST volatile?
+
+Flag format: location,location
+
+CPU registers,cache
+
+
+
+Windows_Memory_Analysis_Basics_3
+What is the 12th plugin listed in the Volatility help menu?
+
+
+.\volatility_2.6_win64_standalone.exe -h
+
+cmdscan
+
+
+
+
+Windows_Memory_Analysis_Basics_4
+
+
+What profile do you use in conjunction with this memory image?
+
+Use the following file (memory image) to answer the rest of the Memory Analysis challenges.
+
+0zapftis.vmem
+
+
+
 
 
 
