@@ -3775,6 +3775,113 @@ hint: complete the path
 Research: https://en.wikipedia.org/wiki/Windows_Resource_Protection https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/clean-up-the-winsxs-folder?view=windows-11
 
 
+\WinSxS\Backup
+
+
+
+Primer_Networking_7
+
+
+
+What CLI tool is often used to troubleshoot DNS issues but can also be used in reconnaissance?
+
+Research: https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/nslookup
+
+
+
+nslookup
+
+Primer_Networking_8
+
+
+In Windows 10 what is the full path to the hosts file? Complete the path c:\Windows____________
+
+Research: https://www.tenable.com/plugins/nessus/23910
+
+
+System32\drivers\etc\hosts
+
+
+
+Primer_Networking_9
+
+
+Fill in the missing component for the usual Host Name Resolution order:
+
+    Client checks own host name
+    Client searches local Hosts file
+    ______________________
+    NetBIOS name resolution sequence is used as a backup
+
+Flag Format: Full name or acronym
+
+Research: https://learn.microsoft.com/en-us/windows/win32/dns/dns-overview https://support.microsoft.com/en-us/topic/microsoft-tcp-ip-host-name-resolution-order-dae00cc9-7e9c-c0cc-8360-477b99cb978a
+
+
+
+Domain Name System
+
+
+
+
+
+
+
+Primer_Networking_10
+
+What cmd.exe tool will display NetBIOS transport statistics in Windows?
+
+Research: https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/nbtstat
+
+
+
+nbtstat
+
+Primer_Surveys_1
+
+
+
+What team survey is focused on security and auditing?
+
+______ Team
+
+Research: https://www.coursera.org/articles/red-team-vs-blue-team
+
+
+Red
+
+Primer_Surveys_2
+
+
+
+What type of survey is focused on computer system settings, updates, configurations and installed software?
+
+________ Team
+
+Research: https://ine.com/blog/understanding-blue-team-roles
+
+blue
+
+
+
+
+Primer_Surveys_3
+
+What type of survey is focused on malware detection, artifact detection and investigating processes?
+
+Research: https://learn.microsoft.com/en-us/security/compass/incident-response-overview
+
+
+Incident response
+
+
+Windows_Memory_Analysis_Plugin_1
+
+What Volatility plugin will dump a process to an executable file sample?
+
+
+
+
 
 
 
