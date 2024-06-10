@@ -3938,8 +3938,102 @@ Use the following file (memory image) to answer the rest of the Memory Analysis 
 
 
 
+.\volatility_2.6_win64_standalone.exe -f .\0zapftis.vmem imageinfo
+
+WinXPSP2x86
+
+
+Windows_Malware_1
+What command did the attacker type to check the status of the malware?
+
+.\volatility_2.6_win64_standalone.exe -f .\0zapftis.vmem  --profile=WinXPSP2x86 cmdscan
+
+sc query malware
 
 
 
+Windows_Malware_2
+
+What are the last 7 digits of the memory offset for the driver used by the malware?
+
+.\volatility_2.6_win64_standalone.exe -f .\0zapftis.vmem  --profile=WinXPSP2x86  driverscan
+1a498b8 (far left column)
+
+
+
+
+Windows_Malware_3
+The process running under PID 544 seems malicious. What is the md5hash of the executable?
+
+
+run cmd as admin
+Set-MpPreference -ExclusionPath "C:\Users\student\Desktop"
+.\volatility_2.6_win64_standalone.exe -f .\0zapftis.vmem  --profile=WinXPSP2x86 procdump -p 544 -D .
+Get-FileHash -Path "C:\Users\student\Desktop\executable.544.exe" -Algorithm MD5
+
+6CEE14703054E226E87A963372F767AA
+
+
+
+
+
+Windows_Malware_4
+
+What remote IP and port did the system connect to?
+
+Flag format: ip:port
+
+
+ .\volatility_2.6_win64_standalone.exe -f .\0zapftis.vmem  --profile=WinXPSP2x86 connscan
+
+172.16.98.1:6666
+
+
+
+
+
+Primer_Active_Directory_1
+What is the database that is used to connect users with network resources?
+
+Resources https://os.cybbh.io/public/os/latest/014_windows_active_directory_enumeration/primer.html
+
+Active Directory
+
+
+Primer_Active_Directory_2
+What are all things that are in active directory stored as?
+
+Resources https://os.cybbh.io/public/os/latest/014_windows_active_directory_enumeration/primer.html#_1_1_active_directory_structure
+
+objects
+
+
+Primer_Active_Directory_3
+What is the Active Directory component which contains formal definitions of every object class that can be created in an Active Directory forest?
+
+Resources https://os.cybbh.io/public/os/latest/014_windows_active_directory_enumeration/primer.html#_3_domains
+
+
+Schema
+
+
+
+Primer_Active_Directory_4
+
+
+What protocol is used when accessing and updating the Active Directory?
+
+Resources https://www.sciencedirect.com/topics/computer-science/directory-access-protocol
+
+LDAP
+
+Primer_Active_Directory_5
+
+
+
+
+From an Offensive perspective, what type of account is usually the main target?
+
+Resources https://os.cybbh.io/public/os/latest/014_windows_active_directory_enumeration/primer.html#_7_administrator_best_practices
 
 
