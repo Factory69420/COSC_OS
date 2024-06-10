@@ -3699,9 +3699,80 @@ https://learn.microsoft.com/en-us/windows/security/threat-protection/overview-of
 
 
 
+Credential Guard
 
 
 
+Primer_Security_18
+
+
+    Introduced in Windows 8 this is Microsoft Antivirus, anti-malware solution?
+
+Research: https://www.microsoft.com/en-us/windows/comprehensive-security
+
+
+
+
+Windows Defender
+
+
+
+Primer_Security_19
+
+
+
+
+    What security technique helps prevent overwrites of the Structured Exception Handler?
+
+Research: https://support.microsoft.com/en-us/topic/how-to-enable-structured-exception-handling-overwrite-protection-sehop-in-windows-operating-systems-8d4595f7-827f-72ee-8c34-fa8e0fe7b915
+
+
+
+
+SEHOP
+
+Primer_Security_20
+
+
+
+    What security protection is built into Windows 10, as described in the "Memory reservations" item in Kernel pool protections? This includes protecting address space 0x00000000 (not listed in article).
+
+Hint: what is 0? Research: https://learn.microsoft.com/en-us/windows/win32/memory/reserving-and-committing-memory
+
+NULL
+
+
+
+Primer_Security_21
+
+
+Read and answer: https://learn.microsoft.com/en-us/windows/win32/wfp/windows-resource-protection-portal
+
+What Windows security feature prevents the replacement of essential system files, folders, and registry keys that are installed as part of the operating system? It became available starting with Windows Server 2008 and Windows Vista.
+
+
+WRP
+
+
+
+Primer_Security_22
+
+Read and answer: https://support.microsoft.com/en-us/topic/use-the-system-file-checker-tool-to-repair-missing-or-corrupted-system-files-79aa86cb-ca52-166a-92a3-966e85d4094e
+
+What option should you use with the System File Checker cmd.exe tool sfc.exe to scan all protected system files, and replace corrupted files with a cached copy that is located in a compressed folder at %WinDir%\System32\dllcache ?
+
+
+/scannow
+
+
+Primer_Security_23
+
+
+Where are copies of known-good critical system files located at %WinDir%___________ and used by the Windows Resource Protection feature?
+
+hint: complete the path
+
+Research: https://en.wikipedia.org/wiki/Windows_Resource_Protection https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/clean-up-the-winsxs-folder?view=windows-11
 
 
 
