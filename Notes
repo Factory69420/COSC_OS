@@ -3472,6 +3472,101 @@ Primer_Security_1
 
 What is the term for the numeric value that the Windows OS uses to uniquely ID a user, group or computer?
 
+security identifier
+
+
+
+Primer_Security_2
+
+What switch can be added to the CMD.exe command whoami, to view the SID of the current user?
+
+Research: https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/whoami
+
+
+/user
+
+
+
+Primer_Security_3
+
+What is the value of a Relative Identifier (RID) assigned to the 1st user account?
+
+Research: https://os.cybbh.io/public/os/latest/013_memory_analysis/primer.html#_4_associate_a_user_sid_with_a_user_profile
+
+
+
+1000
+
+
+Primer_Security_4
+
+What is the well known RID for the Windows Built-In Administrator Local account?
+
+Research: https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-dtyp/81d92bba-d22b-4a8c-908a-554ab29148ab
+
+
+
+500
+
+
+
+
+
+Primer_Security_5
+
+Complete the GET_CimInstance cmdlet to view all the user SIDs on a Windows host machine by Name and SID respectively:
+
+Get-CimInstance Win32_UserAccount | Select-Object ______________
+
+**hint: the output will ONLY include Name and SID
+
+
+
+Name, SID
+
+
+
+Primer_Security_6
+
+
+In Windows what else does a user's security Token contain?
+
+    SIDS of groups of which the user is a member
+    Privilege array
+    The Users _________ ?
+
+**hint: Flag describes the unique number assigned to the user
+
+Research: https://os.cybbh.io/public/os/latest/013_memory_analysis/primer.html#_1_1_security_identifiers_sids
+
+
+SID
+
+
+
+
+Primer_Security_7
+
+When contained in a Windows users access token, what privilege does SeBackupPrivilege grant to the user to perform on files and folders?
+
+**hint - flag is one word
+
+Research: https://learn.microsoft.com/en-us/windows-hardware/drivers/ifs/privileges
+
+backup
+
+
+Primer_Security_8
+
+Windows performs mandatory integrity checks (MICs) by comparing the integrity level of the resource with the integrity level of the calling process. Windows does this integrity check before the the objects discretionary access check because it is _____________?
+
+Research: https://learn.microsoft.com/en-us/windows/win32/secauthz/mandatory-integrity-control
+
+Hint: Opposite of slower
+
+
+
+
 
 
 
