@@ -3387,7 +3387,90 @@ Credential Access
 
 
 ------------------------------------------------------------------------------------------------------------Day 10----------------------------------------------------------------------------------------
+Primer_Networking_1
+What is used in Windows to implement the networking stack to enable communication with the four lowest OSI layers?
 
+Research: https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-2000-server/cc958797(v=technet.10)?redirectedfrom=MSDN
+
+
+
+Network Driver Interface Specification
+
+
+
+
+
+
+Primer_Networking_2
+
+
+
+What Windows cmd.exe command will display the local computer's routing table?
+
+Research: https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/netstat
+
+
+route print
+
+
+
+
+
+Primer_Networking_3
+
+IANA assigned TCP/UDP ports in the range of 0-1023 that are usually associated with server-side services are known as?
+
+Research: https://networkencyclopedia.com/well-known-port-numbers/
+
+
+
+well-known ports
+
+
+
+
+Primer_Networking_4
+
+
+
+What term describes randomly assigned TCP/UDP ports above 1023 and are used for a short period of time (for the duration of a communication session}?
+
+Research: https://en.wikipedia.org/wiki/Ephemeral_port
+
+
+
+
+ephemeral ports
+
+
+
+
+Primer_Networking_5
+
+The two words that decribe translating Host names to IP addresses or NetBIOS names to IP addresses is_____?
+
+Research: https://learn.microsoft.com/en-us/windows/win32/dns/name-resolution
+
+
+
+name resolution
+
+
+Primer_Networking_6
+
+
+
+What is the hierarchical service/protocol that translates hostnames to IP addresses?
+
+Research: https://learn.microsoft.com/en-us/windows/win32/dns/dns-overview
+
+
+DNS
+
+
+Primer_Security_1
+
+What is the term for the numeric value that the Windows OS uses to uniquely ID a user, group or computer?
 
 
 
