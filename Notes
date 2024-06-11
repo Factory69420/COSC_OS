@@ -4106,5 +4106,62 @@ What PowerShell command will list all users and their default properties?
 The flag is the full command with arguments.
 
 
-w
+Get-ADUser -Filter * 
+
+
+
+
+Windows_Active_Directory_Basics4
+What PowerShell command will allow you to search Active Directory accounts for expired accounts without having to create a filter?
+
+The flag is only the command, no arguments/switches.
+
+
+Search-ADAccount
+
+
+
+Windows_AD_Search_Accounts
+Find the expired accounts that aren't disabled. List the last names in Alphabetical Order, separated with a comma, and no space between.
+
+Flag format: name,name
+
+Reminder: All challenges are done using the Domain-Controller
+
+Search-ADAccount -AccountExpired -UsersOnly | Where-Object { $_.Enabled -eq $true }
+
+
+Krause,Page
+
+
+
+Windows_AD_Search_Emails
+Find the unprofessional email addresses. List the email's domain.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
