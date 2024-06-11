@@ -4139,29 +4139,59 @@ Windows_AD_Search_Emails
 Find the unprofessional email addresses. List the email's domain.
 
 
+Get-ADUser -Filter {EmailAddress -like "*"} -Properties EmailAddress | Select-Object -ExpandProperty EmailAddress
+
+
+then use regex to find the emails that stand out
+^(?!.*\b[A-Za-z]+\.[A-Za-z]+\.mil@mail\.mil\b).*$
+
+
+
+ashleymadison.com
+
+
+
+
+Windows_AD_Search_Files
+The flag is the unprofessionally-named file located somewhere on the Warrior Share.
+
+Connect to the Warrior Share:
+
+net use * "\\file-server\warrior share"
+
+
+cd Z:
+
+Get-ChildItem -Path "Z:\" -File -Recurse
+
+lulz.pdf
 
 
 
 
 
+Windows_AD_Search_Insider_1
+
+
+The flag is the name of the file, where in the file contents, someone is requesting modified access rights.
+
+Connect to the Warrior Share:
+
+net use * "\\file-server\warrior share"
+
+
+14287.pdf
 
 
 
+Windows_AD_Search_Insider_2
 
+The flag is the name of the user who is requesting modified access rights.
 
+Connect to the Warrior Share:
 
+net use * "\\file-server\warrior share"
 
+Hint: Complete Windows_AD_Search_Insider_1 first.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 336-6754
