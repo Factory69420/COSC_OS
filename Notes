@@ -4030,10 +4030,81 @@ LDAP
 Primer_Active_Directory_5
 
 
-
-
 From an Offensive perspective, what type of account is usually the main target?
 
 Resources https://os.cybbh.io/public/os/latest/014_windows_active_directory_enumeration/primer.html#_7_administrator_best_practices
+
+Administrator
+
+
+
+
+Primer_Active_Directory_6
+
+Task : If an account has been inactive for a substantial amount of time what should the adminstrators do to the account?
+
+Resources https://os.cybbh.io/public/os/latest/014_windows_active_directory_enumeration/primer.html#_11_impact_of_group_policy_settings
+
+
+
+disable
+
+
+
+
+
+
+Primer_Active_Directory_7
+
+What is the basic PowerShell cmdlet used to enumerate users?
+
+Resources https://os.cybbh.io/public/os/latest/014_windows_active_directory_enumeration/primer.html#_2_2_powershell
+
+Get-ADUser
+
+
+
+Primer_Active_Directory_8
+
+
+
+What is the suite of tools used in CLI to enumerate users across the network?
+
+Resource
+
+
+DS
+
+
+
+Windows_Active_Directory_Basics1
+
+
+What is the domain portion of the following SID:
+
+S-1-5-21-1004336348-1177238915-682003330-1000
+
+
+21-1004336348-1177238915-682003330
+
+
+
+
+
+Windows_Active_Directory_Basics2
+
+What PowerShell command will list domain groups?
+
+Get-ADGroup
+
+
+
+Windows_Active_Directory_Basics3
+
+What PowerShell command will list all users and their default properties?
+
+The flag is the full command with arguments.
+
+
 
 
