@@ -4228,3 +4228,46 @@ List the last names in Alphabetical Order, comma-separated, no spaces. Do not li
 
 Flag format: name,name,name
 
+
+
+
+Get-ADUser -Filter {Enabled -eq $true -and PasswordNeverExpires -eq $true -and SamAccountName -ne "andy.dwyer"} -Properties PasswordNeverExpires
+
+
+
+Eddie.Sanchez
+Xavier.Ibarra
+Alice.Brandywine
+
+
+Get-ADUser -Filter {AllowReversiblePasswordEncryption -eq $true } -Properties AllowReversiblePasswordEncryption
+
+Brandywine,Ibarra,Sanchez
+
+
+
+
+Windows_AD_Search_PII
+
+
+The flag is the name of the file containing PII on the Warrior Share.
+
+Connect to the Warrior Share:
+
+net use * "\\file-server\warrior share"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
