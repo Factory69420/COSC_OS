@@ -4194,4 +4194,37 @@ net use * "\\file-server\warrior share"
 
 Hint: Complete Windows_AD_Search_Insider_1 first.
 
- 336-6754
+Get-ADUser -Filter * -Properties *
+Get-ADUser -Filter {telephoneNumber -like "*336*-6754*"} -Properties telephoneNumber
+
+Karen.Nance
+
+
+706-336-6754
+
+
+
+Windows_AD_Search_Naming
+Find the accounts that contain unprofessional information in the description.
+
+List the last names in Alphabetical Order, separated by a comma, with no space.
+
+Flag format: name,name
+
+Get-ADUser -Filter * -Properties description | Where-Object { $_.Description -notmatch '\w* PLT Soldier'} | Select name,description
+
+Brandywine,Jimenez
+
+
+
+Windows_AD_Search_Passwords
+
+Find the following three accounts:
+
+    two accounts with passwords that never expire NOT andy.dwyer
+    one account that has its password stored using reversible encryption
+
+List the last names in Alphabetical Order, comma-separated, no spaces. Do not list built-in accounts.
+
+Flag format: name,name,name
+
