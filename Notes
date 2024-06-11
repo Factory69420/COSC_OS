@@ -4258,14 +4258,26 @@ net use * "\\file-server\warrior share"
 
 
 
+ Get-ChildItem -Path "Z:\" -File -Recurse
+
+phone_matrix.xlsx
+
+
+Windows_Active_Directory_Basics5
+
+
+Find the short name of the domain in which this server is a part of.
+
+(Get-WmiObject Win32_ComputerSystem).Domain
+
+army
 
 
 
+Windows_Active_Directory_Basics6
+What is the RID of the krbtgt account.
 
-
-
-
-
+Example: S-1-5-21-1004336348-1177238915-682003330-[501]
 
 
 
