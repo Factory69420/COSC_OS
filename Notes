@@ -18,7 +18,10 @@ Test is June 14th on Friday
 
 ./strings *.exe -accepteula
 
-
+Spotify
+z26rp5hp1c7i3qwpiw7lxlnqx
+pass
+idk
 
 xfreerdp /u:student /v:10.50.27.51 /dynamic-resolution +glyph-cache +clipboard
 
