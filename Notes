@@ -3364,6 +3364,94 @@ Flag format: F,S,Layer 4 connection Type
 
 
 
+
+Linux Auditing and Logging XML 3
+
+
+
+File: /home/garviel/output.xml
+
+Parse all of the IP addresses from the file using XPATH queries
+
+https://www.w3schools.com/xml/xpath_intro.asp
+
+HINT:
+http://xpather.com/
+http://www.whitebeam.org/library/guide/TechNotes/xpathtestbed.rhtm
+
+Sample Output (without piping to MD5SUM)
+
+
+
+ addr="XXX.xxx.xxx.xxx"
+ addr="XXX.xxx.xxx.xxx"
+ addr="XXX.xxx.xxx.xxx"
+ addr="XXX.xxx.xxx.xxx"
+ addr="XXX.xxx.xxx.xxx"
+ addr="XXX.xxx.xxx.xxx"
+
+--TRIMMED--
+
+
+Flag format: md5 hash of output
+
+ xpath -q -e '//address/@addr' output.xml > lolbert.txt
+md5sum* lolbert.txt
+
+0e850f14fc192c5105955ec094287bd2
+
+
+
+
+
+
+
+Linux Auditing and Logging XML 4
+
+
+
+
+File: /home/garviel/output.xml
+
+    Select all of the IP addresses and ports using a single XPATH Union Statement
+
+    Pipe the result to md5sum for the flag
+
+HINT:
+
+    https://carpentries-incubator.github.io/lc-webscraping/
+    http://www.tizag.com/xmlTutorial/xpathbar.php
+
+Sample Output (without piping to MD5SUM)
+
+
+
+ addr="xx.xxx.xx.xx"
+ addr="xx.xxx.xx.xx"
+ addr="xx.xxx.xx.xx"
+ addr="xx.xxx.xx.xx"
+ portid="xx"
+ addr="10.50.29.6"
+ addr="xx.xxx.xx.xx"
+ portid="22"
+
+--TRIMMED--
+
+
+
+xpath -q -e '//address/@addr | //host/ports/port/@portid' output.xml  > port.txt
+
+
+md5sum port.txt
+
+
+ff7990139b6d09aa65afb6e069db0dec
+
+
+
+
+
+
 Linux Auditing and Logging Whut 1
 
 Use the log file attached to this for all Whut questions.
