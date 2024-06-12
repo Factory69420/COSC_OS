@@ -4295,6 +4295,122 @@ How many users are members of the Domain Admins group?
 HINT: No sub-groups.
 
 
+(Get-ADGroupMember -Identity "Domain Admins")
+
+1
+
+
+
+
+
+Windows_Active_Directory_Basics8
+
+How many total users are members of the Domain Admins group?
+
+(Get-ADGroupMember -Identity "Domain Admins" -Recursive).Count
+
+
+14
+
+
+
+
+Windows_AD_Follow_Insider_Trail_1
+
+
+
+
+Continue to follow the insider trail to find additional insider threats and their compromised mission.
+
+The flag is the full name of the next insider threat identified.
+
+HINT: Search the Active Directory record of the user identified in search_insider_2.
+
+
+
+Get-ADUser -Identity "Karen.Nance" -Properties *
+
+decrypt the rot13 crap by googling it
+
+Get-ADUser -Identity "Tiffany" -Properties *
+
+Get-ADUser -filter * -Properties * | Where-Object {$_.name -like Tiffany}
+
+
+
+Tiffany.Bellacino
+
+
+
+
+
+Windows_AD_Follow_Insider_Trail_2
+
+
+Continue to follow the insider trail to find additional insider threats and their compromised mission.
+
+The flag is the username resulting from assembling clues within a user's records.
+
+HINT: Search the Active Directory record of the user identified in follow_insider_trail_1. Piece together clues to identify another insider threat.
+
+
+random crap in the AD record:
+
+wis
+
+mi
+
+le
+
+
+le
+
+
+da
+
+
+an
+
+an
+
+wis
+
+Get-ADUser -filter * -Properties * | Where-Object {$_.name -like "*wis*"}
+
+
+Damian.Lewis
+
+
+
+Windows_AD_Follow_Insider_Trail_3
+
+
+Continue to follow the insider trail to find additional insider threats and their compromised mission.
+
+The flag is the full name of the insider threat identified.
+
+HINT: Search the Active Directory record for the user identified in follow_insider_trail_2.
+
+Get-ADUser -filter * -Properties * | Where-Object {$_.name -like "*Isiah*"}
+
+Isiah.Jesus
+
+
+
+Windows_AD_Follow_Insider_Trail_4
+
+
+Continue to follow the insider trail to find additional insider threats and their compromised mission. This flag is a video link.
+
+Hint: Search the Active Directory record for the user identified in follow_insider_trail_3.
+
+Get-ADUser -filter * -Properties * | Where-Object {$_.name -like "*Isiah*"}
+
+
+this is base64 google base64 to ascii
+aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1kUXc0dzlXZ1hjUQ==
+
+https://www.youtube.com/watch?v=dQw4w9WgXcQ
 
 
 
