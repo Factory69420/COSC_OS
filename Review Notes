@@ -1,6 +1,104 @@
 
 
 
+PERSISTENCE
+Windows has gui
+Linux does not
+
+
+
+
+
+
+persistence that occurs upon reboot vs persistence can survive reboot
+
+
+windows:
+Scheduled task survives reboot/schtasks
+Run/runonce starts at reboot
+
+
+linux:
+Systemd / Systemv
+sbin/init
+kernel
+run conditions / runlevels
+etc/profiles
+cron
+
+
+GETS SYS INTERNAL TOOLS CHECK REGULAR NOTES FOR FULL SYNTAX
+net use
+
+Good tools
+autorun
+procdump
+procmon
+TCPView
+
+
+
+execute in dir means u can look into it if it doesnt have execute perms you can ls instead
+
+
+SGUID allows you to run as owner of file
+GUID is for group
+stickybit is normally for shared directories meaning only the owner can do shit in the shared directory such as deletion
+
+
+
+daemon has a parent process used for background processes 
+
+zombie does not it is completed process waiting for parent
+
+
+check services with ps or systemctl status
+
+
+
+
+Linux logs
+/var/logs
+/var/logs/messages
+syslog
+etc rysyslog.conf
+
+use strings on binary files
+
+
+windows
+check all powershell profiles
+$home$ means users home
+$profile just profile being used
+
+
+
+
+
+
+
+hklm - local machine
+hkcu - current user linked to hku 
+hku -users
+
+runonce run once
+run is recurring
+
+
+
+ports that are weird
+repeating 4444
+sequentail 1234
+mispellings
+
+
+more weird stuff
+things not running out of sys32 (windows)
+things not running from /sbin/init, has really high ppid (linux)
+
+
+Windows
+Alternate data streams
 
 
 
@@ -9,5 +107,15 @@
 
 
 
+check logs for past
+check running services and processes for what is happening
 
+
+Weird programs like roblox even if they are running out of normal directory
+
+
+default run levels of /etc/innitab and what not
+/etc/rsyslog. conf 
+bashrc
+look at it with vi and cat
 
